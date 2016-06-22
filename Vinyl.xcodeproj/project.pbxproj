@@ -7,102 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D7171AA1CABE6440080C1F4 /* URLSessionTaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE666A51CAB49DA00ED063D /* URLSessionTaskType.swift */; };
-		7D7171AE1CABE6450080C1F4 /* URLSessionTaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE666A51CAB49DA00ED063D /* URLSessionTaskType.swift */; };
 		7DBD4C891C79CA24008C5487 /* Vinyl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBD4C7F1C79CA24008C5487 /* Vinyl.framework */; };
-		7DBD4C961C79CAB0008C5487 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8B7811C78FE2400D8E037 /* SwiftCheck.framework */; };
-		7DBD4C971C79CACE008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC61C75F75400E1D905 /* MockedTrackedNotFoundErrorHandler.swift */; };
-		7DBD4C981C79CACE008C5487 /* TurntableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F31C6E4B7800E11612 /* TurntableTests.swift */; };
-		7DBD4C991C79CACE008C5487 /* RequestMatcherRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC570501C72ACA100BA1458 /* RequestMatcherRegistryTests.swift */; };
-		7DBD4C9A1C79CACE008C5487 /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886201C73FBBF002DBB2C /* TrackTests.swift */; };
-		7DBD4C9B1C79CACE008C5487 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D8B7731C78E3FF00D8E037 /* Arbitrary.swift */; };
-		7DBD4C9F1C79CB06008C5487 /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82D8B7811C78FE2400D8E037 /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DBD4CA01C79CB18008C5487 /* dvr_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886341C74D470002DBB2C /* dvr_multiple.json */; };
 		7DBD4CA11C79CB18008C5487 /* dvr_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886351C74D470002DBB2C /* dvr_single.json */; };
 		7DBD4CA21C79CB18008C5487 /* vinyl_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886301C74D452002DBB2C /* vinyl_multiple.json */; };
 		7DBD4CA31C79CB18008C5487 /* vinyl_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886311C74D452002DBB2C /* vinyl_single.json */; };
 		7DBD4CB31C79CC4D008C5487 /* Vinyl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBD4CA91C79CC4C008C5487 /* Vinyl.framework */; };
-		7DBD4CC21C79CCE2008C5487 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC11C75F38F00E1D905 /* ErrorHandler.swift */; };
-		7DBD4CC31C79CCE2008C5487 /* FuncComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886141C735136002DBB2C /* FuncComposition.swift */; };
-		7DBD4CC41C79CCE2008C5487 /* NSURLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886111C7346CF002DBB2C /* NSURLQueryItem.swift */; };
-		7DBD4CC51C79CCE2008C5487 /* NSURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886161C737684002DBB2C /* NSURLRequest.swift */; };
-		7DBD4CC61C79CCE2008C5487 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861A1C737C1B002DBB2C /* SequenceType.swift */; };
-		7DBD4CC71C79CCE2008C5487 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DCD1C7724F700E1D905 /* NSBundle.swift */; };
-		7DBD4CC81C79CCE2008C5487 /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F11C6E48B500E11612 /* EncodingDecoding.swift */; };
-		7DBD4CC91C79CCE2008C5487 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2EB1C6E275000E11612 /* JSONHelper.swift */; };
-		7DBD4CCA1C79CCE2008C5487 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79221C6E0E9D004B92A9 /* Turntable.swift */; };
-		7DBD4CCB1C79CCE2008C5487 /* TurntableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3011C75351B00A81608 /* TurntableConfiguration.swift */; };
-		7DBD4CCC1C79CCE2008C5487 /* URLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861C1C738A19002DBB2C /* URLSessionDataTask.swift */; };
-		7DBD4CCD1C79CCE2008C5487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704C1C72A1AB00BA1458 /* Player.swift */; };
-		7DBD4CCE1C79CCE2008C5487 /* TrackMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704E1C72A1FD00BA1458 /* TrackMatcher.swift */; };
-		7DBD4CCF1C79CCE2008C5487 /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79201C6E0B32004B92A9 /* Vinyl.swift */; };
-		7DBD4CD01C79CCE2008C5487 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93580B1C7117A80020103D /* Track.swift */; };
-		7DBD4CD11C79CCE2008C5487 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3031C754F5C00A81608 /* Response.swift */; };
-		7DBD4CD21C79CCE2008C5487 /* RequestMatcherRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48F0D21C7159F10044DC32 /* RequestMatcherRegistry.swift */; };
-		7DBD4CD31C79CCF4008C5487 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC11C75F38F00E1D905 /* ErrorHandler.swift */; };
-		7DBD4CD41C79CCF4008C5487 /* FuncComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886141C735136002DBB2C /* FuncComposition.swift */; };
-		7DBD4CD51C79CCF4008C5487 /* NSURLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886111C7346CF002DBB2C /* NSURLQueryItem.swift */; };
-		7DBD4CD61C79CCF4008C5487 /* NSURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886161C737684002DBB2C /* NSURLRequest.swift */; };
-		7DBD4CD71C79CCF4008C5487 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861A1C737C1B002DBB2C /* SequenceType.swift */; };
-		7DBD4CD81C79CCF4008C5487 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DCD1C7724F700E1D905 /* NSBundle.swift */; };
-		7DBD4CD91C79CCF4008C5487 /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F11C6E48B500E11612 /* EncodingDecoding.swift */; };
-		7DBD4CDA1C79CCF4008C5487 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2EB1C6E275000E11612 /* JSONHelper.swift */; };
-		7DBD4CDB1C79CCF4008C5487 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79221C6E0E9D004B92A9 /* Turntable.swift */; };
-		7DBD4CDC1C79CCF4008C5487 /* TurntableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3011C75351B00A81608 /* TurntableConfiguration.swift */; };
-		7DBD4CDD1C79CCF4008C5487 /* URLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861C1C738A19002DBB2C /* URLSessionDataTask.swift */; };
-		7DBD4CDE1C79CCF4008C5487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704C1C72A1AB00BA1458 /* Player.swift */; };
-		7DBD4CDF1C79CCF4008C5487 /* TrackMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704E1C72A1FD00BA1458 /* TrackMatcher.swift */; };
-		7DBD4CE01C79CCF4008C5487 /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79201C6E0B32004B92A9 /* Vinyl.swift */; };
-		7DBD4CE11C79CCF4008C5487 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93580B1C7117A80020103D /* Track.swift */; };
-		7DBD4CE21C79CCF4008C5487 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3031C754F5C00A81608 /* Response.swift */; };
-		7DBD4CE31C79CCF4008C5487 /* RequestMatcherRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48F0D21C7159F10044DC32 /* RequestMatcherRegistry.swift */; };
-		7DBD4CE41C79CCFA008C5487 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC11C75F38F00E1D905 /* ErrorHandler.swift */; };
-		7DBD4CE51C79CCFA008C5487 /* FuncComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886141C735136002DBB2C /* FuncComposition.swift */; };
-		7DBD4CE61C79CCFA008C5487 /* NSURLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886111C7346CF002DBB2C /* NSURLQueryItem.swift */; };
-		7DBD4CE71C79CCFA008C5487 /* NSURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886161C737684002DBB2C /* NSURLRequest.swift */; };
-		7DBD4CE81C79CCFA008C5487 /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861A1C737C1B002DBB2C /* SequenceType.swift */; };
-		7DBD4CE91C79CCFA008C5487 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DCD1C7724F700E1D905 /* NSBundle.swift */; };
-		7DBD4CEA1C79CCFA008C5487 /* EncodingDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F11C6E48B500E11612 /* EncodingDecoding.swift */; };
-		7DBD4CEB1C79CCFA008C5487 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2EB1C6E275000E11612 /* JSONHelper.swift */; };
-		7DBD4CEC1C79CCFA008C5487 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79221C6E0E9D004B92A9 /* Turntable.swift */; };
-		7DBD4CED1C79CCFA008C5487 /* TurntableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3011C75351B00A81608 /* TurntableConfiguration.swift */; };
-		7DBD4CEE1C79CCFA008C5487 /* URLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708861C1C738A19002DBB2C /* URLSessionDataTask.swift */; };
-		7DBD4CEF1C79CCFA008C5487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704C1C72A1AB00BA1458 /* Player.swift */; };
-		7DBD4CF01C79CCFA008C5487 /* TrackMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5704E1C72A1FD00BA1458 /* TrackMatcher.swift */; };
-		7DBD4CF11C79CCFA008C5487 /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D79201C6E0B32004B92A9 /* Vinyl.swift */; };
-		7DBD4CF21C79CCFA008C5487 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93580B1C7117A80020103D /* Track.swift */; };
-		7DBD4CF31C79CCFA008C5487 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22F3031C754F5C00A81608 /* Response.swift */; };
-		7DBD4CF41C79CCFA008C5487 /* RequestMatcherRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48F0D21C7159F10044DC32 /* RequestMatcherRegistry.swift */; };
-		7DBD4CF71C79CD61008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC61C75F75400E1D905 /* MockedTrackedNotFoundErrorHandler.swift */; };
-		7DBD4CF81C79CD61008C5487 /* TurntableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F31C6E4B7800E11612 /* TurntableTests.swift */; };
-		7DBD4CF91C79CD61008C5487 /* RequestMatcherRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC570501C72ACA100BA1458 /* RequestMatcherRegistryTests.swift */; };
-		7DBD4CFA1C79CD61008C5487 /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886201C73FBBF002DBB2C /* TrackTests.swift */; };
-		7DBD4CFB1C79CD61008C5487 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D8B7731C78E3FF00D8E037 /* Arbitrary.swift */; };
-		7DBD4CFC1C79CD6B008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7995DC61C75F75400E1D905 /* MockedTrackedNotFoundErrorHandler.swift */; };
-		7DBD4CFD1C79CD6B008C5487 /* TurntableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD2F31C6E4B7800E11612 /* TurntableTests.swift */; };
-		7DBD4CFE1C79CD6B008C5487 /* RequestMatcherRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC570501C72ACA100BA1458 /* RequestMatcherRegistryTests.swift */; };
-		7DBD4CFF1C79CD6B008C5487 /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70886201C73FBBF002DBB2C /* TrackTests.swift */; };
-		7DBD4D001C79CD6B008C5487 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D8B7731C78E3FF00D8E037 /* Arbitrary.swift */; };
-		7DBD4D011C79CD7D008C5487 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8B7811C78FE2400D8E037 /* SwiftCheck.framework */; };
-		7DBD4D051C79CD97008C5487 /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82D8B7891C78FE2400D8E037 /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DBD4D061C79CDAF008C5487 /* dvr_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886341C74D470002DBB2C /* dvr_multiple.json */; };
 		7DBD4D071C79CDAF008C5487 /* dvr_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886351C74D470002DBB2C /* dvr_single.json */; };
 		7DBD4D081C79CDAF008C5487 /* vinyl_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886301C74D452002DBB2C /* vinyl_multiple.json */; };
 		7DBD4D091C79CDAF008C5487 /* vinyl_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886311C74D452002DBB2C /* vinyl_single.json */; };
-		7DBD4D0B1C79CEE6008C5487 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DBD4D0A1C79CEE6008C5487 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DBD4D0C1C79CEEB008C5487 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DBD4D0A1C79CEE6008C5487 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DBD4D0D1C79CEED008C5487 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DBD4D0A1C79CEE6008C5487 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DE666A61CAB49DA00ED063D /* URLSessionTaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE666A51CAB49DA00ED063D /* URLSessionTaskType.swift */; };
-		82D8B78E1C78FE3100D8E037 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8B7851C78FE2400D8E037 /* SwiftCheck.framework */; };
-		82D8B78F1C78FE3800D8E037 /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82D8B7851C78FE2400D8E037 /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		942CCBF31D3B0C9500752A1C /* VinylTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF21D3B0C9500752A1C /* VinylTests.swift */; };
+		942CCBF41D3B0C9500752A1C /* VinylTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF21D3B0C9500752A1C /* VinylTests.swift */; };
+		942CCBF51D3B0C9500752A1C /* VinylTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF21D3B0C9500752A1C /* VinylTests.swift */; };
+		942CCBF71D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF61D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift */; };
+		942CCBF81D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF61D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift */; };
+		942CCBF91D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCBF61D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift */; };
+		942F7EA91D39CF2100508FBB /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA41D39CF2100508FBB /* Vinyl.swift */; };
+		942F7EAB1D39CF2100508FBB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA61D39CF2100508FBB /* Track.swift */; };
+		942F7EAC1D39CF2100508FBB /* TurntableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA71D39CF2100508FBB /* TurntableError.swift */; };
+		942F7EB81D39CF6400508FBB /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA41D39CF2100508FBB /* Vinyl.swift */; };
+		942F7EBA1D39CF6400508FBB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA61D39CF2100508FBB /* Track.swift */; };
+		942F7EBB1D39CF6400508FBB /* TurntableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA71D39CF2100508FBB /* TurntableError.swift */; };
+		942F7EBE1D39CF7800508FBB /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA41D39CF2100508FBB /* Vinyl.swift */; };
+		942F7EC01D39CF7800508FBB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA61D39CF2100508FBB /* Track.swift */; };
+		942F7EC11D39CF7800508FBB /* TurntableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EA71D39CF2100508FBB /* TurntableError.swift */; };
+		942F7ECB1D39CF9E00508FBB /* vinyl_method_path_and_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EB41D39CF4C00508FBB /* vinyl_method_path_and_headers.json */; };
+		942F7ECC1D39CFA400508FBB /* vinyl_method_path_and_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EB41D39CF4C00508FBB /* vinyl_method_path_and_headers.json */; };
+		942F7ECD1D39CFA900508FBB /* vinyl_method_path_and_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EB41D39CF4C00508FBB /* vinyl_method_path_and_headers.json */; };
+		942F7ED01D39D02F00508FBB /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECE1D39D02F00508FBB /* Dictionary.swift */; };
+		942F7ED11D39D02F00508FBB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECF1D39D02F00508FBB /* JSON.swift */; };
+		942F7ED41D39D04D00508FBB /* ArgoDecoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ED31D39D04D00508FBB /* ArgoDecoders.swift */; };
+		942F7EFD1D39D0F500508FBB /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECE1D39D02F00508FBB /* Dictionary.swift */; };
+		942F7EFE1D39D0F500508FBB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECF1D39D02F00508FBB /* JSON.swift */; };
+		942F7EFF1D39D0F500508FBB /* ArgoDecoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ED31D39D04D00508FBB /* ArgoDecoders.swift */; };
+		942F7F001D39D0FC00508FBB /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECE1D39D02F00508FBB /* Dictionary.swift */; };
+		942F7F011D39D0FC00508FBB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ECF1D39D02F00508FBB /* JSON.swift */; };
+		942F7F021D39D0FC00508FBB /* ArgoDecoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7ED31D39D04D00508FBB /* ArgoDecoders.swift */; };
+		942F7F031D39D10A00508FBB /* Argo+JSON+Test+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EEF1D39D0B600508FBB /* Argo+JSON+Test+Helpers.swift */; };
+		942F7F041D39D10A00508FBB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF01D39D0B600508FBB /* String.swift */; };
+		942F7F051D39D10A00508FBB /* Track+Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF11D39D0B600508FBB /* Track+Arbitrary.swift */; };
+		942F7F061D39D10A00508FBB /* TrackContentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF51D39D0CD00508FBB /* TrackContentTypeTests.swift */; };
+		942F7F071D39D10A00508FBB /* TrackRequestMethodCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF61D39D0CD00508FBB /* TrackRequestMethodCreationTests.swift */; };
+		942F7F081D39D10A00508FBB /* TrackRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF71D39D0CD00508FBB /* TrackRequestTests.swift */; };
+		942F7F091D39D10A00508FBB /* TrackResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF81D39D0CD00508FBB /* TrackResponseTests.swift */; };
+		942F7F0A1D39D11800508FBB /* Argo+JSON+Test+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EEF1D39D0B600508FBB /* Argo+JSON+Test+Helpers.swift */; };
+		942F7F0B1D39D11800508FBB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF01D39D0B600508FBB /* String.swift */; };
+		942F7F0C1D39D11800508FBB /* Track+Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF11D39D0B600508FBB /* Track+Arbitrary.swift */; };
+		942F7F0D1D39D11800508FBB /* TrackContentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF51D39D0CD00508FBB /* TrackContentTypeTests.swift */; };
+		942F7F0E1D39D11800508FBB /* TrackRequestMethodCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF61D39D0CD00508FBB /* TrackRequestMethodCreationTests.swift */; };
+		942F7F0F1D39D11800508FBB /* TrackRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF71D39D0CD00508FBB /* TrackRequestTests.swift */; };
+		942F7F101D39D11800508FBB /* TrackResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF81D39D0CD00508FBB /* TrackResponseTests.swift */; };
+		942F7F111D39D12500508FBB /* Argo+JSON+Test+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EEF1D39D0B600508FBB /* Argo+JSON+Test+Helpers.swift */; };
+		942F7F121D39D12500508FBB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF01D39D0B600508FBB /* String.swift */; };
+		942F7F131D39D12500508FBB /* Track+Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF11D39D0B600508FBB /* Track+Arbitrary.swift */; };
+		942F7F141D39D12500508FBB /* TrackContentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF51D39D0CD00508FBB /* TrackContentTypeTests.swift */; };
+		942F7F151D39D12500508FBB /* TrackRequestMethodCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF61D39D0CD00508FBB /* TrackRequestMethodCreationTests.swift */; };
+		942F7F161D39D12500508FBB /* TrackRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF71D39D0CD00508FBB /* TrackRequestTests.swift */; };
+		942F7F171D39D12500508FBB /* TrackResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F7EF81D39D0CD00508FBB /* TrackResponseTests.swift */; };
+		942F7F181D39D13700508FBB /* request_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED71D39D09600508FBB /* request_empty.json */; };
+		942F7F191D39D13700508FBB /* request_with_base64_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED81D39D09600508FBB /* request_with_base64_body.json */; };
+		942F7F1A1D39D13700508FBB /* request_with_json_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED91D39D09600508FBB /* request_with_json_body.json */; };
+		942F7F1B1D39D13700508FBB /* request_with_malformed_header_integer.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDA1D39D09600508FBB /* request_with_malformed_header_integer.json */; };
+		942F7F1C1D39D13700508FBB /* request_with_malformed_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDB1D39D09600508FBB /* request_with_malformed_headers.json */; };
+		942F7F1D1D39D13700508FBB /* request_with_malformed_url_as_object.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDC1D39D09600508FBB /* request_with_malformed_url_as_object.json */; };
+		942F7F1E1D39D13700508FBB /* request_with_malformed_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDD1D39D09600508FBB /* request_with_malformed_url.json */; };
+		942F7F1F1D39D13700508FBB /* request_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDE1D39D09700508FBB /* request_with_text_body.json */; };
+		942F7F201D39D13700508FBB /* request_with_url_and_get.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDF1D39D09700508FBB /* request_with_url_and_get.json */; };
+		942F7F211D39D13700508FBB /* request_without_method.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE01D39D09700508FBB /* request_without_method.json */; };
+		942F7F221D39D13700508FBB /* request_without_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE11D39D09700508FBB /* request_without_url.json */; };
+		942F7F361D39D15E00508FBB /* request_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED71D39D09600508FBB /* request_empty.json */; };
+		942F7F371D39D15E00508FBB /* request_with_base64_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED81D39D09600508FBB /* request_with_base64_body.json */; };
+		942F7F381D39D15E00508FBB /* request_with_json_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED91D39D09600508FBB /* request_with_json_body.json */; };
+		942F7F391D39D15E00508FBB /* request_with_malformed_header_integer.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDA1D39D09600508FBB /* request_with_malformed_header_integer.json */; };
+		942F7F3A1D39D15E00508FBB /* request_with_malformed_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDB1D39D09600508FBB /* request_with_malformed_headers.json */; };
+		942F7F3B1D39D15E00508FBB /* request_with_malformed_url_as_object.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDC1D39D09600508FBB /* request_with_malformed_url_as_object.json */; };
+		942F7F3C1D39D15E00508FBB /* request_with_malformed_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDD1D39D09600508FBB /* request_with_malformed_url.json */; };
+		942F7F3D1D39D15E00508FBB /* request_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDE1D39D09700508FBB /* request_with_text_body.json */; };
+		942F7F3E1D39D15E00508FBB /* request_with_url_and_get.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDF1D39D09700508FBB /* request_with_url_and_get.json */; };
+		942F7F3F1D39D15E00508FBB /* request_without_method.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE01D39D09700508FBB /* request_without_method.json */; };
+		942F7F401D39D15E00508FBB /* request_without_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE11D39D09700508FBB /* request_without_url.json */; };
+		942F7F421D39D17500508FBB /* request_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED71D39D09600508FBB /* request_empty.json */; };
+		942F7F431D39D17500508FBB /* request_with_base64_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED81D39D09600508FBB /* request_with_base64_body.json */; };
+		942F7F441D39D17500508FBB /* request_with_json_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7ED91D39D09600508FBB /* request_with_json_body.json */; };
+		942F7F451D39D17500508FBB /* request_with_malformed_header_integer.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDA1D39D09600508FBB /* request_with_malformed_header_integer.json */; };
+		942F7F461D39D17500508FBB /* request_with_malformed_headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDB1D39D09600508FBB /* request_with_malformed_headers.json */; };
+		942F7F471D39D17500508FBB /* request_with_malformed_url_as_object.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDC1D39D09600508FBB /* request_with_malformed_url_as_object.json */; };
+		942F7F481D39D17500508FBB /* request_with_malformed_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDD1D39D09600508FBB /* request_with_malformed_url.json */; };
+		942F7F491D39D17500508FBB /* request_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDE1D39D09700508FBB /* request_with_text_body.json */; };
+		942F7F4A1D39D17500508FBB /* request_with_url_and_get.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EDF1D39D09700508FBB /* request_with_url_and_get.json */; };
+		942F7F4B1D39D17500508FBB /* request_without_method.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE01D39D09700508FBB /* request_without_method.json */; };
+		942F7F4C1D39D17500508FBB /* request_without_url.json in Resources */ = {isa = PBXBuildFile; fileRef = 942F7EE11D39D09700508FBB /* request_without_url.json */; };
+		945971381D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945971371D3D49AA00627C2D /* TurntableIntegrationTests.swift */; };
+		945971391D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945971371D3D49AA00627C2D /* TurntableIntegrationTests.swift */; };
+		9459713A1D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945971371D3D49AA00627C2D /* TurntableIntegrationTests.swift */; };
+		9459713C1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9459713B1D3D50F400627C2D /* HTTPURLResponse.swift */; };
+		9459713D1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9459713B1D3D50F400627C2D /* HTTPURLResponse.swift */; };
+		9459713E1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9459713B1D3D50F400627C2D /* HTTPURLResponse.swift */; };
+		9476A2601D3E8CD600D09DDB /* response_valid_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A25E1D3E896600D09DDB /* response_valid_with_text_body.json */; };
+		9476A2611D3E8CDB00D09DDB /* response_valid_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A25E1D3E896600D09DDB /* response_valid_with_text_body.json */; };
+		9476A2621D3E8CE100D09DDB /* response_valid_with_text_body.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A25E1D3E896600D09DDB /* response_valid_with_text_body.json */; };
+		9476A2681D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A2671D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift */; };
+		9476A2691D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A2671D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift */; };
+		9476A26A1D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A2671D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift */; };
+		9476A2701D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A26F1D3E9AF100D09DDB /* CurryDelegateAsCallback.swift */; };
+		9476A2711D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A26F1D3E9AF100D09DDB /* CurryDelegateAsCallback.swift */; };
+		9476A2721D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A26F1D3E9AF100D09DDB /* CurryDelegateAsCallback.swift */; };
+		9476A2791D3ED53100D09DDB /* response_valid_without_status.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A2771D3ED51400D09DDB /* response_valid_without_status.json */; };
+		9476A27A1D3ED53A00D09DDB /* response_valid_without_status.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A2771D3ED51400D09DDB /* response_valid_without_status.json */; };
+		9476A27B1D3ED54100D09DDB /* response_valid_without_status.json in Resources */ = {isa = PBXBuildFile; fileRef = 9476A2771D3ED51400D09DDB /* response_valid_without_status.json */; };
+		94AD83161D39C75A00723D94 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD83151D39C75A00723D94 /* Argo.framework */; };
+		94AD83191D39C76C00723D94 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD83171D39C76C00723D94 /* Argo.framework */; };
+		94AD831A1D39C76C00723D94 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD83181D39C76C00723D94 /* Curry.framework */; };
+		94AD831C1D39C77200723D94 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD831B1D39C77200723D94 /* Argo.framework */; };
+		94AD831E1D39C7A200723D94 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD831D1D39C7A200723D94 /* Curry.framework */; };
+		94AD83201D39C7FE00723D94 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD831F1D39C7FE00723D94 /* Curry.framework */; };
+		94AD83241D39C8CD00723D94 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B988691D1DA0B3001E5424 /* Turntable.swift */; };
+		94AD83251D39C8CD00723D94 /* TurntableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886A1D1DA0B3001E5424 /* TurntableTask.swift */; };
+		94AD83261D39C8D300723D94 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B988691D1DA0B3001E5424 /* Turntable.swift */; };
+		94AD83271D39C8D300723D94 /* TurntableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886A1D1DA0B3001E5424 /* TurntableTask.swift */; };
+		94AD83281D39C8DA00723D94 /* TurntableSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886D1D1DA0C2001E5424 /* TurntableSequenceTests.swift */; };
+		94AD83291D39C8E000723D94 /* TurntableSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886D1D1DA0C2001E5424 /* TurntableSequenceTests.swift */; };
+		94AD832A1D39C8E600723D94 /* TurntableSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886D1D1DA0C2001E5424 /* TurntableSequenceTests.swift */; };
+		94AD832C1D39CA3A00723D94 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD832B1D39CA3A00723D94 /* SwiftCheck.framework */; };
+		94AD832E1D39CA4100723D94 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD832D1D39CA4100723D94 /* SwiftCheck.framework */; };
+		94AD83301D39CA4900723D94 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AD832F1D39CA4900723D94 /* SwiftCheck.framework */; };
+		94B988631D1D9F61001E5424 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B988621D1D9F61001E5424 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94B9886B1D1DA0B3001E5424 /* Turntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B988691D1DA0B3001E5424 /* Turntable.swift */; };
+		94B9886C1D1DA0B3001E5424 /* TurntableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9886A1D1DA0B3001E5424 /* TurntableTask.swift */; };
+		94B9886F1D1DA20D001E5424 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B988621D1D9F61001E5424 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94B988701D1DA215001E5424 /* Vinyl.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B988621D1D9F61001E5424 /* Vinyl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E001761D39D20F0041A956 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001751D39D20F0041A956 /* URLRequest.swift */; };
+		94E001771D39D21C0041A956 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001751D39D20F0041A956 /* URLRequest.swift */; };
+		94E001781D39D2260041A956 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001751D39D20F0041A956 /* URLRequest.swift */; };
+		94E001861D3B03C10041A956 /* TurntableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001821D3B03C10041A956 /* TurntableSequence.swift */; };
+		94E001871D3B03C10041A956 /* TurntableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001821D3B03C10041A956 /* TurntableSequence.swift */; };
+		94E001881D3B03C10041A956 /* TurntableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E001821D3B03C10041A956 /* TurntableSequence.swift */; };
 		C70886321C74D452002DBB2C /* vinyl_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886301C74D452002DBB2C /* vinyl_multiple.json */; };
 		C70886331C74D452002DBB2C /* vinyl_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886311C74D452002DBB2C /* vinyl_single.json */; };
 		C70886361C74D470002DBB2C /* dvr_multiple.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886341C74D470002DBB2C /* dvr_multiple.json */; };
 		C70886371C74D470002DBB2C /* dvr_single.json in Resources */ = {isa = PBXBuildFile; fileRef = C70886351C74D470002DBB2C /* dvr_single.json */; };
 		C75D79111C6DFE30004B92A9 /* Vinyl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75D79061C6DFE30004B92A9 /* Vinyl.framework */; };
-		E530E6111C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E530E6101C864B3300D9B590 /* URLSessionUploadTask.swift */; };
-		E530E6121C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E530E6101C864B3300D9B590 /* URLSessionUploadTask.swift */; };
-		E530E6131C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E530E6101C864B3300D9B590 /* URLSessionUploadTask.swift */; };
 		E530E6181C864E1800D9B590 /* vinyl_upload.json in Resources */ = {isa = PBXBuildFile; fileRef = E530E6171C864E1800D9B590 /* vinyl_upload.json */; };
 		E530E6191C864E1800D9B590 /* vinyl_upload.json in Resources */ = {isa = PBXBuildFile; fileRef = E530E6171C864E1800D9B590 /* vinyl_upload.json */; };
 		E530E61A1C864E1800D9B590 /* vinyl_upload.json in Resources */ = {isa = PBXBuildFile; fileRef = E530E6171C864E1800D9B590 /* vinyl_upload.json */; };
@@ -116,75 +161,12 @@
 			remoteGlobalIDString = 7DBD4C7E1C79CA24008C5487;
 			remoteInfo = "Vinyl-Mac";
 		};
-		7DBD4C9C1C79CADD008C5487 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 844FCC8C198B320500EB242A;
-			remoteInfo = SwiftCheck;
-		};
 		7DBD4CB41C79CC4D008C5487 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C75D78FD1C6DFE30004B92A9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DBD4CA81C79CC4C008C5487;
 			remoteInfo = "Vinyl-tvOS";
-		};
-		7DBD4CF51C79CD52008C5487 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8240CCB01C3A123600EF4D29;
-			remoteInfo = "SwiftCheck-tvOS";
-		};
-		82D8B7801C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 844FCC8D198B320500EB242A;
-			remoteInfo = SwiftCheck;
-		};
-		82D8B7821C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 844FCC98198B320500EB242A;
-			remoteInfo = SwiftCheckTests;
-		};
-		82D8B7841C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84DF75F81B0BD54600C912B0;
-			remoteInfo = "SwiftCheck-iOS";
-		};
-		82D8B7861C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84DF76021B0BD54600C912B0;
-			remoteInfo = "SwiftCheck-iOSTests";
-		};
-		82D8B7881C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8240CCB11C3A123600EF4D29;
-			remoteInfo = "SwiftCheck-tvOS";
-		};
-		82D8B78A1C78FE2400D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8240CCBA1C3A123700EF4D29;
-			remoteInfo = "SwiftCheck-tvOSTests";
-		};
-		82D8B78C1C78FE2900D8E037 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 84DF75F71B0BD54600C912B0;
-			remoteInfo = "SwiftCheck-iOS";
 		};
 		C75D79121C6DFE30004B92A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -202,7 +184,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7DBD4C9F1C79CB06008C5487 /* SwiftCheck.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +193,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7DBD4D051C79CD97008C5487 /* SwiftCheck.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,51 +202,72 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				82D8B78F1C78FE3800D8E037 /* SwiftCheck.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7D22F3011C75351B00A81608 /* TurntableConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurntableConfiguration.swift; sourceTree = "<group>"; };
-		7D22F3031C754F5C00A81608 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		7D48F0D21C7159F10044DC32 /* RequestMatcherRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMatcherRegistry.swift; sourceTree = "<group>"; };
-		7D93580B1C7117A80020103D /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		7DBD4C7F1C79CA24008C5487 /* Vinyl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vinyl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD4C881C79CA24008C5487 /* Vinyl-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vinyl-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD4CA91C79CC4C008C5487 /* Vinyl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vinyl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD4CB21C79CC4D008C5487 /* Vinyl-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vinyl-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DBD4D0A1C79CEE6008C5487 /* Vinyl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vinyl.h; sourceTree = "<group>"; };
-		7DC5704C1C72A1AB00BA1458 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		7DC5704E1C72A1FD00BA1458 /* TrackMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackMatcher.swift; sourceTree = "<group>"; };
-		7DC570501C72ACA100BA1458 /* RequestMatcherRegistryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMatcherRegistryTests.swift; sourceTree = "<group>"; };
-		7DE666A51CAB49DA00ED063D /* URLSessionTaskType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionTaskType.swift; sourceTree = "<group>"; };
-		82D8B7731C78E3FF00D8E037 /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
-		82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCheck.xcodeproj; path = Carthage/Checkouts/SwiftCheck/SwiftCheck.xcodeproj; sourceTree = SOURCE_ROOT; };
-		C70886111C7346CF002DBB2C /* NSURLQueryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLQueryItem.swift; sourceTree = "<group>"; };
-		C70886141C735136002DBB2C /* FuncComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncComposition.swift; sourceTree = "<group>"; };
-		C70886161C737684002DBB2C /* NSURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLRequest.swift; sourceTree = "<group>"; };
-		C708861A1C737C1B002DBB2C /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
-		C708861C1C738A19002DBB2C /* URLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTask.swift; sourceTree = "<group>"; };
-		C70886201C73FBBF002DBB2C /* TrackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
+		942CCBF21D3B0C9500752A1C /* VinylTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VinylTests.swift; path = Types/VinylTests.swift; sourceTree = "<group>"; };
+		942CCBF61D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaybackSequenceMatchTypeTests.swift; path = Types/PlaybackSequenceMatchTypeTests.swift; sourceTree = "<group>"; };
+		942F7EA41D39CF2100508FBB /* Vinyl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vinyl.swift; path = Types/Vinyl.swift; sourceTree = "<group>"; };
+		942F7EA61D39CF2100508FBB /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = Types/Track.swift; sourceTree = "<group>"; };
+		942F7EA71D39CF2100508FBB /* TurntableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurntableError.swift; path = Types/TurntableError.swift; sourceTree = "<group>"; };
+		942F7EB41D39CF4C00508FBB /* vinyl_method_path_and_headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vinyl_method_path_and_headers.json; sourceTree = "<group>"; };
+		942F7ECE1D39D02F00508FBB /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Extensions/Dictionary.swift; sourceTree = "<group>"; };
+		942F7ECF1D39D02F00508FBB /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Extensions/JSON.swift; sourceTree = "<group>"; };
+		942F7ED31D39D04D00508FBB /* ArgoDecoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArgoDecoders.swift; path = Functions/ArgoDecoders.swift; sourceTree = "<group>"; };
+		942F7ED71D39D09600508FBB /* request_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_empty.json; path = Partials/request_empty.json; sourceTree = "<group>"; };
+		942F7ED81D39D09600508FBB /* request_with_base64_body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_base64_body.json; path = Partials/request_with_base64_body.json; sourceTree = "<group>"; };
+		942F7ED91D39D09600508FBB /* request_with_json_body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_json_body.json; path = Partials/request_with_json_body.json; sourceTree = "<group>"; };
+		942F7EDA1D39D09600508FBB /* request_with_malformed_header_integer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_malformed_header_integer.json; path = Partials/request_with_malformed_header_integer.json; sourceTree = "<group>"; };
+		942F7EDB1D39D09600508FBB /* request_with_malformed_headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_malformed_headers.json; path = Partials/request_with_malformed_headers.json; sourceTree = "<group>"; };
+		942F7EDC1D39D09600508FBB /* request_with_malformed_url_as_object.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_malformed_url_as_object.json; path = Partials/request_with_malformed_url_as_object.json; sourceTree = "<group>"; };
+		942F7EDD1D39D09600508FBB /* request_with_malformed_url.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_malformed_url.json; path = Partials/request_with_malformed_url.json; sourceTree = "<group>"; };
+		942F7EDE1D39D09700508FBB /* request_with_text_body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_text_body.json; path = Partials/request_with_text_body.json; sourceTree = "<group>"; };
+		942F7EDF1D39D09700508FBB /* request_with_url_and_get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_with_url_and_get.json; path = Partials/request_with_url_and_get.json; sourceTree = "<group>"; };
+		942F7EE01D39D09700508FBB /* request_without_method.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_without_method.json; path = Partials/request_without_method.json; sourceTree = "<group>"; };
+		942F7EE11D39D09700508FBB /* request_without_url.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = request_without_url.json; path = Partials/request_without_url.json; sourceTree = "<group>"; };
+		942F7EEF1D39D0B600508FBB /* Argo+JSON+Test+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Argo+JSON+Test+Helpers.swift"; path = "Helpers/Argo+JSON+Test+Helpers.swift"; sourceTree = "<group>"; };
+		942F7EF01D39D0B600508FBB /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Helpers/String.swift; sourceTree = "<group>"; };
+		942F7EF11D39D0B600508FBB /* Track+Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Track+Arbitrary.swift"; path = "Helpers/Track+Arbitrary.swift"; sourceTree = "<group>"; };
+		942F7EF51D39D0CD00508FBB /* TrackContentTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackContentTypeTests.swift; path = Types/TrackContentTypeTests.swift; sourceTree = "<group>"; };
+		942F7EF61D39D0CD00508FBB /* TrackRequestMethodCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackRequestMethodCreationTests.swift; path = Types/TrackRequestMethodCreationTests.swift; sourceTree = "<group>"; };
+		942F7EF71D39D0CD00508FBB /* TrackRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackRequestTests.swift; path = Types/TrackRequestTests.swift; sourceTree = "<group>"; };
+		942F7EF81D39D0CD00508FBB /* TrackResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackResponseTests.swift; path = Types/TrackResponseTests.swift; sourceTree = "<group>"; };
+		945971371D3D49AA00627C2D /* TurntableIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurntableIntegrationTests.swift; path = Types/TurntableIntegrationTests.swift; sourceTree = "<group>"; };
+		9459713B1D3D50F400627C2D /* HTTPURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		9476A25E1D3E896600D09DDB /* response_valid_with_text_body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = response_valid_with_text_body.json; path = Partials/response_valid_with_text_body.json; sourceTree = "<group>"; };
+		9476A2671D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpectResponseFromDelegate.swift; path = Helpers/ExpectResponseFromDelegate.swift; sourceTree = "<group>"; };
+		9476A26F1D3E9AF100D09DDB /* CurryDelegateAsCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurryDelegateAsCallback.swift; path = Helpers/CurryDelegateAsCallback.swift; sourceTree = "<group>"; };
+		9476A2771D3ED51400D09DDB /* response_valid_without_status.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = response_valid_without_status.json; path = Partials/response_valid_without_status.json; sourceTree = "<group>"; };
+		94AD83151D39C75A00723D94 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		94AD83171D39C76C00723D94 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/Mac/Argo.framework; sourceTree = "<group>"; };
+		94AD83181D39C76C00723D94 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/Mac/Curry.framework; sourceTree = "<group>"; };
+		94AD831B1D39C77200723D94 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/tvOS/Argo.framework; sourceTree = "<group>"; };
+		94AD831D1D39C7A200723D94 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/tvOS/Curry.framework; sourceTree = "<group>"; };
+		94AD831F1D39C7FE00723D94 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		94AD832B1D39CA3A00723D94 /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/iOS/SwiftCheck.framework; sourceTree = "<group>"; };
+		94AD832D1D39CA4100723D94 /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/Mac/SwiftCheck.framework; sourceTree = "<group>"; };
+		94AD832F1D39CA4900723D94 /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/tvOS/SwiftCheck.framework; sourceTree = "<group>"; };
+		94B988601D1D9F4B001E5424 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		94B988621D1D9F61001E5424 /* Vinyl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vinyl.h; path = Resources/Vinyl.h; sourceTree = "<group>"; };
+		94B988651D1DA004001E5424 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		94B988691D1DA0B3001E5424 /* Turntable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Turntable.swift; path = Types/Turntable.swift; sourceTree = "<group>"; };
+		94B9886A1D1DA0B3001E5424 /* TurntableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurntableTask.swift; path = Types/TurntableTask.swift; sourceTree = "<group>"; };
+		94B9886D1D1DA0C2001E5424 /* TurntableSequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurntableSequenceTests.swift; path = Types/TurntableSequenceTests.swift; sourceTree = "<group>"; };
+		94E001751D39D20F0041A956 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Extensions/URLRequest.swift; sourceTree = "<group>"; };
+		94E001821D3B03C10041A956 /* TurntableSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurntableSequence.swift; path = Types/TurntableSequence.swift; sourceTree = "<group>"; };
 		C70886301C74D452002DBB2C /* vinyl_multiple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vinyl_multiple.json; sourceTree = "<group>"; };
 		C70886311C74D452002DBB2C /* vinyl_single.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vinyl_single.json; sourceTree = "<group>"; };
 		C70886341C74D470002DBB2C /* dvr_multiple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dvr_multiple.json; sourceTree = "<group>"; };
 		C70886351C74D470002DBB2C /* dvr_single.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dvr_single.json; sourceTree = "<group>"; };
-		C72AD2EB1C6E275000E11612 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
-		C72AD2F11C6E48B500E11612 /* EncodingDecoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingDecoding.swift; sourceTree = "<group>"; };
-		C72AD2F31C6E4B7800E11612 /* TurntableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurntableTests.swift; sourceTree = "<group>"; };
 		C75D79061C6DFE30004B92A9 /* Vinyl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vinyl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C75D790B1C6DFE30004B92A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75D79101C6DFE30004B92A9 /* Vinyl-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vinyl-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C75D79171C6DFE30004B92A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C75D79201C6E0B32004B92A9 /* Vinyl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vinyl.swift; sourceTree = "<group>"; };
-		C75D79221C6E0E9D004B92A9 /* Turntable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turntable.swift; sourceTree = "<group>"; };
-		C7995DC11C75F38F00E1D905 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		C7995DC61C75F75400E1D905 /* MockedTrackedNotFoundErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedTrackedNotFoundErrorHandler.swift; sourceTree = "<group>"; };
-		C7995DCD1C7724F700E1D905 /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
-		E530E6101C864B3300D9B590 /* URLSessionUploadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTask.swift; sourceTree = "<group>"; };
 		E530E6171C864E1800D9B590 /* vinyl_upload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vinyl_upload.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +276,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AD83191D39C76C00723D94 /* Argo.framework in Frameworks */,
+				94AD831A1D39C76C00723D94 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +285,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4C961C79CAB0008C5487 /* SwiftCheck.framework in Frameworks */,
 				7DBD4C891C79CA24008C5487 /* Vinyl.framework in Frameworks */,
+				94AD832E1D39CA4100723D94 /* SwiftCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +294,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AD831C1D39C77200723D94 /* Argo.framework in Frameworks */,
+				94AD831E1D39C7A200723D94 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +303,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4D011C79CD7D008C5487 /* SwiftCheck.framework in Frameworks */,
 				7DBD4CB31C79CC4D008C5487 /* Vinyl.framework in Frameworks */,
+				94AD83301D39CA4900723D94 /* SwiftCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AD83161D39C75A00723D94 /* Argo.framework in Frameworks */,
+				94AD83201D39C7FE00723D94 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,72 +321,138 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D8B78E1C78FE3100D8E037 /* SwiftCheck.framework in Frameworks */,
 				C75D79111C6DFE30004B92A9 /* Vinyl.framework in Frameworks */,
+				94AD832C1D39CA3A00723D94 /* SwiftCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82D8B7781C78FE2400D8E037 /* Products */ = {
+		942F7EA01D39CF0500508FBB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				82D8B7811C78FE2400D8E037 /* SwiftCheck.framework */,
-				82D8B7831C78FE2400D8E037 /* SwiftCheckTests.xctest */,
-				82D8B7851C78FE2400D8E037 /* SwiftCheck.framework */,
-				82D8B7871C78FE2400D8E037 /* SwiftCheck-iOSTests.xctest */,
-				82D8B7891C78FE2400D8E037 /* SwiftCheck.framework */,
-				82D8B78B1C78FE2400D8E037 /* SwiftCheck-tvOSTests.xctest */,
+				942F7ECE1D39D02F00508FBB /* Dictionary.swift */,
+				9459713B1D3D50F400627C2D /* HTTPURLResponse.swift */,
+				942F7ECF1D39D02F00508FBB /* JSON.swift */,
+				94E001751D39D20F0041A956 /* URLRequest.swift */,
 			);
-			name = Products;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
-		C70886101C7346C8002DBB2C /* Extensions */ = {
+		942F7ED21D39D03400508FBB /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				C70886111C7346CF002DBB2C /* NSURLQueryItem.swift */,
-				C70886161C737684002DBB2C /* NSURLRequest.swift */,
-				C708861A1C737C1B002DBB2C /* SequenceType.swift */,
-				C7995DCD1C7724F700E1D905 /* NSBundle.swift */,
+				942F7ED31D39D04D00508FBB /* ArgoDecoders.swift */,
 			);
-			path = Extensions;
+			name = Functions;
 			sourceTree = "<group>";
 		};
-		C70886131C73512F002DBB2C /* Composition */ = {
+		942F7ED51D39D07D00508FBB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C70886141C735136002DBB2C /* FuncComposition.swift */,
+				942F7EEF1D39D0B600508FBB /* Argo+JSON+Test+Helpers.swift */,
+				9476A26F1D3E9AF100D09DDB /* CurryDelegateAsCallback.swift */,
+				9476A2671D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift */,
+				942F7EF01D39D0B600508FBB /* String.swift */,
+				942F7EF11D39D0B600508FBB /* Track+Arbitrary.swift */,
 			);
-			path = Composition;
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		942F7ED61D39D08900508FBB /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				942F7ED71D39D09600508FBB /* request_empty.json */,
+				942F7ED81D39D09600508FBB /* request_with_base64_body.json */,
+				942F7ED91D39D09600508FBB /* request_with_json_body.json */,
+				942F7EDA1D39D09600508FBB /* request_with_malformed_header_integer.json */,
+				942F7EDB1D39D09600508FBB /* request_with_malformed_headers.json */,
+				942F7EDC1D39D09600508FBB /* request_with_malformed_url_as_object.json */,
+				942F7EDD1D39D09600508FBB /* request_with_malformed_url.json */,
+				942F7EDE1D39D09700508FBB /* request_with_text_body.json */,
+				942F7EDF1D39D09700508FBB /* request_with_url_and_get.json */,
+				942F7EE01D39D09700508FBB /* request_without_method.json */,
+				942F7EE11D39D09700508FBB /* request_without_url.json */,
+				9476A25E1D3E896600D09DDB /* response_valid_with_text_body.json */,
+				9476A2771D3ED51400D09DDB /* response_valid_without_status.json */,
+			);
+			name = Partials;
+			sourceTree = "<group>";
+		};
+		94AD83141D39C75A00723D94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94AD832F1D39CA4900723D94 /* SwiftCheck.framework */,
+				94AD832D1D39CA4100723D94 /* SwiftCheck.framework */,
+				94AD832B1D39CA3A00723D94 /* SwiftCheck.framework */,
+				94AD831F1D39C7FE00723D94 /* Curry.framework */,
+				94AD831D1D39C7A200723D94 /* Curry.framework */,
+				94AD831B1D39C77200723D94 /* Argo.framework */,
+				94AD83171D39C76C00723D94 /* Argo.framework */,
+				94AD83181D39C76C00723D94 /* Curry.framework */,
+				94AD83151D39C75A00723D94 /* Argo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94B9885F1D1D9F13001E5424 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94B988601D1D9F4B001E5424 /* Info.plist */,
+				94B988621D1D9F61001E5424 /* Vinyl.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		94B988641D1D9FBE001E5424 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94B988651D1DA004001E5424 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		94B988671D1DA038001E5424 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				942CCBF61D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift */,
+				942F7EF51D39D0CD00508FBB /* TrackContentTypeTests.swift */,
+				942F7EF61D39D0CD00508FBB /* TrackRequestMethodCreationTests.swift */,
+				942F7EF71D39D0CD00508FBB /* TrackRequestTests.swift */,
+				942F7EF81D39D0CD00508FBB /* TrackResponseTests.swift */,
+				945971371D3D49AA00627C2D /* TurntableIntegrationTests.swift */,
+				94B9886D1D1DA0C2001E5424 /* TurntableSequenceTests.swift */,
+				942CCBF21D3B0C9500752A1C /* VinylTests.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		94B988681D1DA0A2001E5424 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				942F7EA61D39CF2100508FBB /* Track.swift */,
+				94B988691D1DA0B3001E5424 /* Turntable.swift */,
+				942F7EA71D39CF2100508FBB /* TurntableError.swift */,
+				94E001821D3B03C10041A956 /* TurntableSequence.swift */,
+				94B9886A1D1DA0B3001E5424 /* TurntableTask.swift */,
+				942F7EA41D39CF2100508FBB /* Vinyl.swift */,
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 		C708862F1C74D452002DBB2C /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				942F7ED61D39D08900508FBB /* Partials */,
 				C70886341C74D470002DBB2C /* dvr_multiple.json */,
 				C70886351C74D470002DBB2C /* dvr_single.json */,
+				942F7EB41D39CF4C00508FBB /* vinyl_method_path_and_headers.json */,
 				C70886301C74D452002DBB2C /* vinyl_multiple.json */,
 				C70886311C74D452002DBB2C /* vinyl_single.json */,
 				E530E6171C864E1800D9B590 /* vinyl_upload.json */,
 			);
 			path = Fixtures;
-			sourceTree = "<group>";
-		};
-		C72AD2EA1C6E274700E11612 /* JSON_Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C72AD2EB1C6E275000E11612 /* JSONHelper.swift */,
-			);
-			path = JSON_Helpers;
-			sourceTree = "<group>";
-		};
-		C72AD2F01C6E489B00E11612 /* EncodingDecoding */ = {
-			isa = PBXGroup;
-			children = (
-				C72AD2F11C6E48B500E11612 /* EncodingDecoding.swift */,
-			);
-			path = EncodingDecoding;
 			sourceTree = "<group>";
 		};
 		C75D78FC1C6DFE30004B92A9 = {
@@ -388,6 +461,7 @@
 				C75D79081C6DFE30004B92A9 /* Vinyl */,
 				C75D79141C6DFE30004B92A9 /* VinylTests */,
 				C75D79071C6DFE30004B92A9 /* Products */,
+				94AD83141D39C75A00723D94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -407,24 +481,10 @@
 		C75D79081C6DFE30004B92A9 /* Vinyl */ = {
 			isa = PBXGroup;
 			children = (
-				7DBD4D0A1C79CEE6008C5487 /* Vinyl.h */,
-				C75D790B1C6DFE30004B92A9 /* Info.plist */,
-				C7995DC01C75F38F00E1D905 /* ErrorHandler */,
-				C70886131C73512F002DBB2C /* Composition */,
-				C70886101C7346C8002DBB2C /* Extensions */,
-				C72AD2F01C6E489B00E11612 /* EncodingDecoding */,
-				C72AD2EA1C6E274700E11612 /* JSON_Helpers */,
-				C75D79221C6E0E9D004B92A9 /* Turntable.swift */,
-				7D22F3011C75351B00A81608 /* TurntableConfiguration.swift */,
-				7DE666A51CAB49DA00ED063D /* URLSessionTaskType.swift */,
-				C708861C1C738A19002DBB2C /* URLSessionDataTask.swift */,
-				E530E6101C864B3300D9B590 /* URLSessionUploadTask.swift */,
-				7DC5704C1C72A1AB00BA1458 /* Player.swift */,
-				7DC5704E1C72A1FD00BA1458 /* TrackMatcher.swift */,
-				C75D79201C6E0B32004B92A9 /* Vinyl.swift */,
-				7D93580B1C7117A80020103D /* Track.swift */,
-				7D22F3031C754F5C00A81608 /* Response.swift */,
-				7D48F0D21C7159F10044DC32 /* RequestMatcherRegistry.swift */,
+				942F7EA01D39CF0500508FBB /* Extensions */,
+				942F7ED21D39D03400508FBB /* Functions */,
+				94B9885F1D1D9F13001E5424 /* Resources */,
+				94B988681D1DA0A2001E5424 /* Types */,
 			);
 			path = Vinyl;
 			sourceTree = "<group>";
@@ -432,32 +492,12 @@
 		C75D79141C6DFE30004B92A9 /* VinylTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7995DC51C75F75400E1D905 /* Mocked Handlers */,
 				C708862F1C74D452002DBB2C /* Fixtures */,
-				C72AD2F31C6E4B7800E11612 /* TurntableTests.swift */,
-				7DC570501C72ACA100BA1458 /* RequestMatcherRegistryTests.swift */,
-				C70886201C73FBBF002DBB2C /* TrackTests.swift */,
-				82D8B7731C78E3FF00D8E037 /* Arbitrary.swift */,
-				82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */,
-				C75D79171C6DFE30004B92A9 /* Info.plist */,
+				942F7ED51D39D07D00508FBB /* Helpers */,
+				94B988641D1D9FBE001E5424 /* Resources */,
+				94B988671D1DA038001E5424 /* Types */,
 			);
 			path = VinylTests;
-			sourceTree = "<group>";
-		};
-		C7995DC01C75F38F00E1D905 /* ErrorHandler */ = {
-			isa = PBXGroup;
-			children = (
-				C7995DC11C75F38F00E1D905 /* ErrorHandler.swift */,
-			);
-			path = ErrorHandler;
-			sourceTree = "<group>";
-		};
-		C7995DC51C75F75400E1D905 /* Mocked Handlers */ = {
-			isa = PBXGroup;
-			children = (
-				C7995DC61C75F75400E1D905 /* MockedTrackedNotFoundErrorHandler.swift */,
-			);
-			path = "Mocked Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,7 +507,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4D0C1C79CEEB008C5487 /* Vinyl.h in Headers */,
+				94B9886F1D1DA20D001E5424 /* Vinyl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +515,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4D0D1C79CEED008C5487 /* Vinyl.h in Headers */,
+				94B988701D1DA215001E5424 /* Vinyl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +523,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4D0B1C79CEE6008C5487 /* Vinyl.h in Headers */,
+				94B988631D1D9F61001E5424 /* Vinyl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +560,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7DBD4C9D1C79CADD008C5487 /* PBXTargetDependency */,
 				7DBD4C8B1C79CA24008C5487 /* PBXTargetDependency */,
 			);
 			name = "Vinyl-MacTests";
@@ -558,7 +597,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7DBD4CF61C79CD52008C5487 /* PBXTargetDependency */,
 				7DBD4CB51C79CC4D008C5487 /* PBXTargetDependency */,
 			);
 			name = "Vinyl-tvOSTests";
@@ -596,7 +634,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				82D8B78D1C78FE2900D8E037 /* PBXTargetDependency */,
 				C75D79131C6DFE30004B92A9 /* PBXTargetDependency */,
 			);
 			name = "Vinyl-iOSTests";
@@ -611,7 +648,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Velhotes;
 				TargetAttributes = {
 					7DBD4C7E1C79CA24008C5487 = {
@@ -628,9 +665,11 @@
 					};
 					C75D79051C6DFE30004B92A9 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					C75D790F1C6DFE30004B92A9 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -644,12 +683,6 @@
 			mainGroup = C75D78FC1C6DFE30004B92A9;
 			productRefGroup = C75D79071C6DFE30004B92A9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 82D8B7781C78FE2400D8E037 /* Products */;
-					ProjectRef = 82D8B7771C78FE2400D8E037 /* SwiftCheck.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C75D79051C6DFE30004B92A9 /* Vinyl-iOS */,
@@ -661,51 +694,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		82D8B7811C78FE2400D8E037 /* SwiftCheck.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftCheck.framework;
-			remoteRef = 82D8B7801C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		82D8B7831C78FE2400D8E037 /* SwiftCheckTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftCheckTests.xctest;
-			remoteRef = 82D8B7821C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		82D8B7851C78FE2400D8E037 /* SwiftCheck.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftCheck.framework;
-			remoteRef = 82D8B7841C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		82D8B7871C78FE2400D8E037 /* SwiftCheck-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftCheck-iOSTests.xctest";
-			remoteRef = 82D8B7861C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		82D8B7891C78FE2400D8E037 /* SwiftCheck.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftCheck.framework;
-			remoteRef = 82D8B7881C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		82D8B78B1C78FE2400D8E037 /* SwiftCheck-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftCheck-tvOSTests.xctest";
-			remoteRef = 82D8B78A1C78FE2400D8E037 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7DBD4C7D1C79CA24008C5487 /* Resources */ = {
@@ -719,6 +707,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476A27A1D3ED53A00D09DDB /* response_valid_without_status.json in Resources */,
+				9476A2611D3E8CDB00D09DDB /* response_valid_with_text_body.json in Resources */,
+				942F7F361D39D15E00508FBB /* request_empty.json in Resources */,
+				942F7F371D39D15E00508FBB /* request_with_base64_body.json in Resources */,
+				942F7F381D39D15E00508FBB /* request_with_json_body.json in Resources */,
+				942F7F391D39D15E00508FBB /* request_with_malformed_header_integer.json in Resources */,
+				942F7F3A1D39D15E00508FBB /* request_with_malformed_headers.json in Resources */,
+				942F7F3B1D39D15E00508FBB /* request_with_malformed_url_as_object.json in Resources */,
+				942F7F3C1D39D15E00508FBB /* request_with_malformed_url.json in Resources */,
+				942F7F3D1D39D15E00508FBB /* request_with_text_body.json in Resources */,
+				942F7F3E1D39D15E00508FBB /* request_with_url_and_get.json in Resources */,
+				942F7F3F1D39D15E00508FBB /* request_without_method.json in Resources */,
+				942F7F401D39D15E00508FBB /* request_without_url.json in Resources */,
+				942F7ECC1D39CFA400508FBB /* vinyl_method_path_and_headers.json in Resources */,
 				7DBD4CA01C79CB18008C5487 /* dvr_multiple.json in Resources */,
 				7DBD4CA11C79CB18008C5487 /* dvr_single.json in Resources */,
 				E530E6191C864E1800D9B590 /* vinyl_upload.json in Resources */,
@@ -738,6 +740,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476A27B1D3ED54100D09DDB /* response_valid_without_status.json in Resources */,
+				9476A2621D3E8CE100D09DDB /* response_valid_with_text_body.json in Resources */,
+				942F7F181D39D13700508FBB /* request_empty.json in Resources */,
+				942F7F191D39D13700508FBB /* request_with_base64_body.json in Resources */,
+				942F7F1A1D39D13700508FBB /* request_with_json_body.json in Resources */,
+				942F7F1B1D39D13700508FBB /* request_with_malformed_header_integer.json in Resources */,
+				942F7F1C1D39D13700508FBB /* request_with_malformed_headers.json in Resources */,
+				942F7F1D1D39D13700508FBB /* request_with_malformed_url_as_object.json in Resources */,
+				942F7F1E1D39D13700508FBB /* request_with_malformed_url.json in Resources */,
+				942F7F1F1D39D13700508FBB /* request_with_text_body.json in Resources */,
+				942F7F201D39D13700508FBB /* request_with_url_and_get.json in Resources */,
+				942F7F211D39D13700508FBB /* request_without_method.json in Resources */,
+				942F7F221D39D13700508FBB /* request_without_url.json in Resources */,
+				942F7ECD1D39CFA900508FBB /* vinyl_method_path_and_headers.json in Resources */,
 				7DBD4D061C79CDAF008C5487 /* dvr_multiple.json in Resources */,
 				7DBD4D071C79CDAF008C5487 /* dvr_single.json in Resources */,
 				E530E61A1C864E1800D9B590 /* vinyl_upload.json in Resources */,
@@ -757,6 +773,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476A2791D3ED53100D09DDB /* response_valid_without_status.json in Resources */,
+				9476A2601D3E8CD600D09DDB /* response_valid_with_text_body.json in Resources */,
+				942F7F421D39D17500508FBB /* request_empty.json in Resources */,
+				942F7F431D39D17500508FBB /* request_with_base64_body.json in Resources */,
+				942F7F441D39D17500508FBB /* request_with_json_body.json in Resources */,
+				942F7F451D39D17500508FBB /* request_with_malformed_header_integer.json in Resources */,
+				942F7F461D39D17500508FBB /* request_with_malformed_headers.json in Resources */,
+				942F7F471D39D17500508FBB /* request_with_malformed_url_as_object.json in Resources */,
+				942F7F481D39D17500508FBB /* request_with_malformed_url.json in Resources */,
+				942F7F491D39D17500508FBB /* request_with_text_body.json in Resources */,
+				942F7F4A1D39D17500508FBB /* request_with_url_and_get.json in Resources */,
+				942F7F4B1D39D17500508FBB /* request_without_method.json in Resources */,
+				942F7F4C1D39D17500508FBB /* request_without_url.json in Resources */,
+				942F7ECB1D39CF9E00508FBB /* vinyl_method_path_and_headers.json in Resources */,
 				C70886361C74D470002DBB2C /* dvr_multiple.json in Resources */,
 				C70886371C74D470002DBB2C /* dvr_single.json in Resources */,
 				E530E6181C864E1800D9B590 /* vinyl_upload.json in Resources */,
@@ -772,25 +802,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4CC21C79CCE2008C5487 /* ErrorHandler.swift in Sources */,
-				7DBD4CC31C79CCE2008C5487 /* FuncComposition.swift in Sources */,
-				E530E6121C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */,
-				7DBD4CC41C79CCE2008C5487 /* NSURLQueryItem.swift in Sources */,
-				7DBD4CC51C79CCE2008C5487 /* NSURLRequest.swift in Sources */,
-				7DBD4CC61C79CCE2008C5487 /* SequenceType.swift in Sources */,
-				7DBD4CC71C79CCE2008C5487 /* NSBundle.swift in Sources */,
-				7DBD4CC81C79CCE2008C5487 /* EncodingDecoding.swift in Sources */,
-				7DBD4CC91C79CCE2008C5487 /* JSONHelper.swift in Sources */,
-				7DBD4CCA1C79CCE2008C5487 /* Turntable.swift in Sources */,
-				7DBD4CCB1C79CCE2008C5487 /* TurntableConfiguration.swift in Sources */,
-				7DBD4CCC1C79CCE2008C5487 /* URLSessionDataTask.swift in Sources */,
-				7DBD4CCD1C79CCE2008C5487 /* Player.swift in Sources */,
-				7DBD4CCE1C79CCE2008C5487 /* TrackMatcher.swift in Sources */,
-				7D7171AA1CABE6440080C1F4 /* URLSessionTaskType.swift in Sources */,
-				7DBD4CCF1C79CCE2008C5487 /* Vinyl.swift in Sources */,
-				7DBD4CD01C79CCE2008C5487 /* Track.swift in Sources */,
-				7DBD4CD11C79CCE2008C5487 /* Response.swift in Sources */,
-				7DBD4CD21C79CCE2008C5487 /* RequestMatcherRegistry.swift in Sources */,
+				94E001771D39D21C0041A956 /* URLRequest.swift in Sources */,
+				94E001871D3B03C10041A956 /* TurntableSequence.swift in Sources */,
+				942F7EFD1D39D0F500508FBB /* Dictionary.swift in Sources */,
+				942F7EFE1D39D0F500508FBB /* JSON.swift in Sources */,
+				9459713D1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */,
+				942F7EFF1D39D0F500508FBB /* ArgoDecoders.swift in Sources */,
+				942F7EB81D39CF6400508FBB /* Vinyl.swift in Sources */,
+				942F7EBA1D39CF6400508FBB /* Track.swift in Sources */,
+				942F7EBB1D39CF6400508FBB /* TurntableError.swift in Sources */,
+				94AD83241D39C8CD00723D94 /* Turntable.swift in Sources */,
+				94AD83251D39C8CD00723D94 /* TurntableTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,11 +820,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4C971C79CACE008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */,
-				7DBD4C981C79CACE008C5487 /* TurntableTests.swift in Sources */,
-				7DBD4C991C79CACE008C5487 /* RequestMatcherRegistryTests.swift in Sources */,
-				7DBD4C9A1C79CACE008C5487 /* TrackTests.swift in Sources */,
-				7DBD4C9B1C79CACE008C5487 /* Arbitrary.swift in Sources */,
+				942CCBF41D3B0C9500752A1C /* VinylTests.swift in Sources */,
+				9476A2711D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */,
+				942F7F0A1D39D11800508FBB /* Argo+JSON+Test+Helpers.swift in Sources */,
+				942F7F0B1D39D11800508FBB /* String.swift in Sources */,
+				942F7F0C1D39D11800508FBB /* Track+Arbitrary.swift in Sources */,
+				942F7F0D1D39D11800508FBB /* TrackContentTypeTests.swift in Sources */,
+				942F7F0E1D39D11800508FBB /* TrackRequestMethodCreationTests.swift in Sources */,
+				942CCBF81D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */,
+				942F7F0F1D39D11800508FBB /* TrackRequestTests.swift in Sources */,
+				942F7F101D39D11800508FBB /* TrackResponseTests.swift in Sources */,
+				9476A2691D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */,
+				945971391D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */,
+				94AD83291D39C8E000723D94 /* TurntableSequenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,25 +840,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4CE41C79CCFA008C5487 /* ErrorHandler.swift in Sources */,
-				7DBD4CE51C79CCFA008C5487 /* FuncComposition.swift in Sources */,
-				E530E6131C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */,
-				7DBD4CE61C79CCFA008C5487 /* NSURLQueryItem.swift in Sources */,
-				7DBD4CE71C79CCFA008C5487 /* NSURLRequest.swift in Sources */,
-				7DBD4CE81C79CCFA008C5487 /* SequenceType.swift in Sources */,
-				7DBD4CE91C79CCFA008C5487 /* NSBundle.swift in Sources */,
-				7DBD4CEA1C79CCFA008C5487 /* EncodingDecoding.swift in Sources */,
-				7DBD4CEB1C79CCFA008C5487 /* JSONHelper.swift in Sources */,
-				7DBD4CEC1C79CCFA008C5487 /* Turntable.swift in Sources */,
-				7DBD4CED1C79CCFA008C5487 /* TurntableConfiguration.swift in Sources */,
-				7DBD4CEE1C79CCFA008C5487 /* URLSessionDataTask.swift in Sources */,
-				7DBD4CEF1C79CCFA008C5487 /* Player.swift in Sources */,
-				7DBD4CF01C79CCFA008C5487 /* TrackMatcher.swift in Sources */,
-				7D7171AE1CABE6450080C1F4 /* URLSessionTaskType.swift in Sources */,
-				7DBD4CF11C79CCFA008C5487 /* Vinyl.swift in Sources */,
-				7DBD4CF21C79CCFA008C5487 /* Track.swift in Sources */,
-				7DBD4CF31C79CCFA008C5487 /* Response.swift in Sources */,
-				7DBD4CF41C79CCFA008C5487 /* RequestMatcherRegistry.swift in Sources */,
+				94E001781D39D2260041A956 /* URLRequest.swift in Sources */,
+				94E001881D3B03C10041A956 /* TurntableSequence.swift in Sources */,
+				942F7F001D39D0FC00508FBB /* Dictionary.swift in Sources */,
+				942F7F011D39D0FC00508FBB /* JSON.swift in Sources */,
+				9459713E1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */,
+				942F7F021D39D0FC00508FBB /* ArgoDecoders.swift in Sources */,
+				942F7EBE1D39CF7800508FBB /* Vinyl.swift in Sources */,
+				942F7EC01D39CF7800508FBB /* Track.swift in Sources */,
+				942F7EC11D39CF7800508FBB /* TurntableError.swift in Sources */,
+				94AD83261D39C8D300723D94 /* Turntable.swift in Sources */,
+				94AD83271D39C8D300723D94 /* TurntableTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,11 +858,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4CF71C79CD61008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */,
-				7DBD4CF81C79CD61008C5487 /* TurntableTests.swift in Sources */,
-				7DBD4CF91C79CD61008C5487 /* RequestMatcherRegistryTests.swift in Sources */,
-				7DBD4CFA1C79CD61008C5487 /* TrackTests.swift in Sources */,
-				7DBD4CFB1C79CD61008C5487 /* Arbitrary.swift in Sources */,
+				942CCBF51D3B0C9500752A1C /* VinylTests.swift in Sources */,
+				9476A2721D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */,
+				942F7F111D39D12500508FBB /* Argo+JSON+Test+Helpers.swift in Sources */,
+				942F7F121D39D12500508FBB /* String.swift in Sources */,
+				942F7F131D39D12500508FBB /* Track+Arbitrary.swift in Sources */,
+				942F7F141D39D12500508FBB /* TrackContentTypeTests.swift in Sources */,
+				942F7F151D39D12500508FBB /* TrackRequestMethodCreationTests.swift in Sources */,
+				942CCBF91D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */,
+				942F7F161D39D12500508FBB /* TrackRequestTests.swift in Sources */,
+				942F7F171D39D12500508FBB /* TrackResponseTests.swift in Sources */,
+				9476A26A1D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */,
+				9459713A1D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */,
+				94AD832A1D39C8E600723D94 /* TurntableSequenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,25 +878,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4CD31C79CCF4008C5487 /* ErrorHandler.swift in Sources */,
-				7DBD4CD41C79CCF4008C5487 /* FuncComposition.swift in Sources */,
-				E530E6111C864B3300D9B590 /* URLSessionUploadTask.swift in Sources */,
-				7DBD4CD51C79CCF4008C5487 /* NSURLQueryItem.swift in Sources */,
-				7DBD4CD61C79CCF4008C5487 /* NSURLRequest.swift in Sources */,
-				7DBD4CD71C79CCF4008C5487 /* SequenceType.swift in Sources */,
-				7DBD4CD81C79CCF4008C5487 /* NSBundle.swift in Sources */,
-				7DBD4CD91C79CCF4008C5487 /* EncodingDecoding.swift in Sources */,
-				7DBD4CDA1C79CCF4008C5487 /* JSONHelper.swift in Sources */,
-				7DBD4CDB1C79CCF4008C5487 /* Turntable.swift in Sources */,
-				7DBD4CDC1C79CCF4008C5487 /* TurntableConfiguration.swift in Sources */,
-				7DBD4CDD1C79CCF4008C5487 /* URLSessionDataTask.swift in Sources */,
-				7DBD4CDE1C79CCF4008C5487 /* Player.swift in Sources */,
-				7DBD4CDF1C79CCF4008C5487 /* TrackMatcher.swift in Sources */,
-				7DE666A61CAB49DA00ED063D /* URLSessionTaskType.swift in Sources */,
-				7DBD4CE01C79CCF4008C5487 /* Vinyl.swift in Sources */,
-				7DBD4CE11C79CCF4008C5487 /* Track.swift in Sources */,
-				7DBD4CE21C79CCF4008C5487 /* Response.swift in Sources */,
-				7DBD4CE31C79CCF4008C5487 /* RequestMatcherRegistry.swift in Sources */,
+				94E001861D3B03C10041A956 /* TurntableSequence.swift in Sources */,
+				942F7ED11D39D02F00508FBB /* JSON.swift in Sources */,
+				9459713C1D3D50F400627C2D /* HTTPURLResponse.swift in Sources */,
+				942F7ED41D39D04D00508FBB /* ArgoDecoders.swift in Sources */,
+				942F7EAC1D39CF2100508FBB /* TurntableError.swift in Sources */,
+				94B9886C1D1DA0B3001E5424 /* TurntableTask.swift in Sources */,
+				942F7EA91D39CF2100508FBB /* Vinyl.swift in Sources */,
+				942F7ED01D39D02F00508FBB /* Dictionary.swift in Sources */,
+				94B9886B1D1DA0B3001E5424 /* Turntable.swift in Sources */,
+				942F7EAB1D39CF2100508FBB /* Track.swift in Sources */,
+				94E001761D39D20F0041A956 /* URLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,11 +896,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBD4CFC1C79CD6B008C5487 /* MockedTrackedNotFoundErrorHandler.swift in Sources */,
-				7DBD4CFD1C79CD6B008C5487 /* TurntableTests.swift in Sources */,
-				7DBD4CFE1C79CD6B008C5487 /* RequestMatcherRegistryTests.swift in Sources */,
-				7DBD4CFF1C79CD6B008C5487 /* TrackTests.swift in Sources */,
-				7DBD4D001C79CD6B008C5487 /* Arbitrary.swift in Sources */,
+				942CCBF31D3B0C9500752A1C /* VinylTests.swift in Sources */,
+				9476A2701D3E9AF100D09DDB /* CurryDelegateAsCallback.swift in Sources */,
+				942F7F031D39D10A00508FBB /* Argo+JSON+Test+Helpers.swift in Sources */,
+				942F7F041D39D10A00508FBB /* String.swift in Sources */,
+				942F7F051D39D10A00508FBB /* Track+Arbitrary.swift in Sources */,
+				942F7F061D39D10A00508FBB /* TrackContentTypeTests.swift in Sources */,
+				942F7F071D39D10A00508FBB /* TrackRequestMethodCreationTests.swift in Sources */,
+				942CCBF71D3BD4B200752A1C /* PlaybackSequenceMatchTypeTests.swift in Sources */,
+				942F7F081D39D10A00508FBB /* TrackRequestTests.swift in Sources */,
+				942F7F091D39D10A00508FBB /* TrackResponseTests.swift in Sources */,
+				9476A2681D3E9A5200D09DDB /* ExpectResponseFromDelegate.swift in Sources */,
+				945971381D3D49AA00627C2D /* TurntableIntegrationTests.swift in Sources */,
+				94AD83281D39C8DA00723D94 /* TurntableSequenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,25 +920,10 @@
 			target = 7DBD4C7E1C79CA24008C5487 /* Vinyl-Mac */;
 			targetProxy = 7DBD4C8A1C79CA24008C5487 /* PBXContainerItemProxy */;
 		};
-		7DBD4C9D1C79CADD008C5487 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftCheck;
-			targetProxy = 7DBD4C9C1C79CADD008C5487 /* PBXContainerItemProxy */;
-		};
 		7DBD4CB51C79CC4D008C5487 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7DBD4CA81C79CC4C008C5487 /* Vinyl-tvOS */;
 			targetProxy = 7DBD4CB41C79CC4D008C5487 /* PBXContainerItemProxy */;
-		};
-		7DBD4CF61C79CD52008C5487 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftCheck-tvOS";
-			targetProxy = 7DBD4CF51C79CD52008C5487 /* PBXContainerItemProxy */;
-		};
-		82D8B78D1C78FE2900D8E037 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftCheck-iOS";
-			targetProxy = 82D8B78C1C78FE2900D8E037 /* PBXContainerItemProxy */;
 		};
 		C75D79131C6DFE30004B92A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -927,8 +942,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -936,6 +955,7 @@
 				PRODUCT_NAME = Vinyl;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -948,8 +968,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -957,6 +981,8 @@
 				PRODUCT_NAME = Vinyl;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -969,12 +995,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -987,12 +1014,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1003,13 +1032,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.Vinyl;
 				PRODUCT_NAME = Vinyl;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -1022,13 +1056,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.Vinyl;
 				PRODUCT_NAME = Vinyl;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -1041,11 +1081,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
@@ -1057,11 +1098,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
@@ -1165,13 +1208,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.Vinyl;
 				PRODUCT_NAME = Vinyl;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1183,12 +1231,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vinyl/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Vinyl/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.Vinyl;
 				PRODUCT_NAME = Vinyl;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1199,10 +1253,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1213,10 +1268,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = VinylTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = VinylTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = velhotes.VinylTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

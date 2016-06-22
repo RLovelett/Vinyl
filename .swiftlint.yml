@@ -1,0 +1,8 @@
+included:
+    - Vinyl
+    - VinylTests
+disabled_rules:
+   - nesting
+   - todo
+opt_in_rules:
+    - empty_count
