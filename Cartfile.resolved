@@ -1,1 +1,3 @@
-github "typelift/SwiftCheck" "v0.6.1"
+github "thoughtbot/Argo" "2734480bfb3a466160d9edfa53ab33287af030da"
+github "thoughtbot/Curry" "0d1db3e19759527b4ed9cf941abaea404a707db0"
+github "RLovelett/SwiftCheck" "f53680e992ef5fee76c1ac054f44ffbd62da38d6"
