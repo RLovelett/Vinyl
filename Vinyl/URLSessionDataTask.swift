@@ -8,29 +8,30 @@
 
 import Foundation
 
-private func generate() -> AnyGenerator<Int> {
+private func generate() -> AnyIterator<Int> {
     var current = 0
-    return AnyGenerator<Int>(body: {
+
+    return AnyIterator<Int> {
         current = current + 1
         return current
-    })
+    }
 }
 
-private let sharedSequence: AnyGenerator<Int> = generate()
+private let sharedSequence: AnyIterator<Int> = generate()
 
-typealias URLSessionDataTaskCallback = (NSData?, NSURLResponse?, NSError?) -> Void
+typealias URLSessionDataTaskCallback = (Data?, URLResponse?, NSError?) -> Void
 
-public final class URLSessionDataTask: NSURLSessionDataTask {
+public final class URLSessionDataTask: Foundation.URLSessionDataTask {
 
     private let session: Turntable
-    private let request: NSURLRequest
-    private let delegate: NSURLSessionDataDelegate?
+    private let request: URLRequest
+    private let delegate: URLSessionDataDelegate?
     private let callback: URLSessionDataTaskCallback?
 
-    init(session: Turntable, request: NSURLRequest, callback: URLSessionDataTaskCallback? = nil) {
+    init(session: Turntable, request: URLRequest, callback: URLSessionDataTaskCallback? = nil) {
         self.session = session
         self.request = request
-        self.delegate = session.delegate as? NSURLSessionDataDelegate
+        self.delegate = session.delegate as? URLSessionDataDelegate
         self.callback = callback
     }
 
@@ -41,8 +42,8 @@ public final class URLSessionDataTask: NSURLSessionDataTask {
     }
 
     public override func resume() {
-        _state = .Running
-        var data: NSData?
+        _state = .running
+        var data: Data?
         do {
             let playedTrack = try self.session.player?.playTrack(forRequest: self.request)
             data = playedTrack?.data
@@ -51,52 +52,52 @@ public final class URLSessionDataTask: NSURLSessionDataTask {
 
             // Delegate Message #1
             if let response = response {
-                self.session.operationQueue.addOperationWithBlock {
-                    self.delegate?.URLSession?(self.session, dataTask: self, didReceiveResponse: response) { (_) in }
+                self.session.operationQueue.addOperation {
+                    self.delegate?.urlSession?(self.session, dataTask: self, didReceive: response) { (_) in }
                 }
             }
 
             // Delegate Message #2
             if let data = data {
-                self.session.operationQueue.addOperationWithBlock {
-                    self.delegate?.URLSession?(self.session, dataTask: self, didReceiveData: data)
+                self.session.operationQueue.addOperation {
+                    self.delegate?.urlSession?(self.session, dataTask: self, didReceive: data)
                 }
             }
 
             // Delegate Message #3
-            self.session.operationQueue.addOperationWithBlock {
-                self.delegate?.URLSession?(self.session, task: self, didCompleteWithError: self.error)
+            self.session.operationQueue.addOperation {
+                self.delegate?.urlSession?(self.session, task: self, didCompleteWithError: self.error)
                 self.callback?(data, self.response, self.error)
             }
-        } catch Error.TrackNotFound {
+        } catch Error.trackNotFound {
             self.session.errorHandler.handleTrackNotFound(self.request, playTracksUniquely: self.session.turntableConfiguration.playTracksUniquely)
         } catch {
             self.session.errorHandler.handleUnknownError()
         }
-        _state = .Completed
+        _state = .completed
     }
 
     public override func suspend() {
         // We won't do anything here
     }
 
-    private var _state: NSURLSessionTaskState = .Suspended
-    override public var state: NSURLSessionTaskState {
+    private var _state: URLSessionTask.State = .suspended
+    override public var state: URLSessionTask.State {
         return _state
     }
 
     // MARK: - Obtaining General Task Information
 
-    override public var currentRequest: NSURLRequest? {
+    override public var currentRequest: URLRequest? {
         return request
     }
 
-    override public var originalRequest: NSURLRequest? {
+    override public var originalRequest: URLRequest? {
         return request
     }
 
-    private var _response: NSURLResponse? = nil
-    override public var response: NSURLResponse? {
+    private var _response: URLResponse? = nil
+    override public var response: URLResponse? {
         return _response
     }
 

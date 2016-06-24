@@ -10,7 +10,7 @@ import Foundation
 
 infix operator ~> { associativity left }
 
-func ~> <T, U, V>(f: T -> U, g: U -> V) -> T -> V {
+func ~> <T, U, V>(f: (T) -> U, g: (U) -> V) -> (T) -> V {
     
     return { g(f($0)) }
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension NSURLQueryItem: Comparable { }
+extension URLQueryItem: Comparable { }
 
-public func < (lhs: NSURLQueryItem, rhs: NSURLQueryItem) -> Bool {
+public func < (lhs: URLQueryItem, rhs: URLQueryItem) -> Bool {
     
     return lhs.name < rhs.name
 }

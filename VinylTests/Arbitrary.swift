@@ -34,11 +34,8 @@ let jsonStringPair: Gen<String> = sequence([
     .map { $0.reduce("", combine: +) }
 
 // Generates a JSON string pair of the form '"key":"value", "key1":"value1" ....'
-let jsonStringPairs: Gen<String> =  Gen.sized { sz in
-    return jsonStringPair.proliferateSized(sz + 1)
-    } .map { xs in
-        return xs.reduce("") { $0 == "" ? $1 : $0 + "," + $1 }
-}
+let jsonStringPairs = Gen.sized({ jsonStringPair.proliferateSized($0 + 1) })
+    .map({ $0.joined(separator: ",") })
 
 // Generates a JSON of the form '{"key":"value", "key1":"value1" .... }'
 let basicJSONDic : Gen<AnyObject> = sequence([
@@ -47,8 +44,8 @@ let basicJSONDic : Gen<AnyObject> = sequence([
     Gen.pure("}")
     ])
     .map { $0.reduce("", combine: +) }
-    .map { $0.dataUsingEncoding(NSUTF8StringEncoding)! }
-    .map { try! NSJSONSerialization.JSONObjectWithData($0, options: .AllowFragments) }
+    .map { $0.data(using: String.Encoding.utf8)! }
+    .map { try! JSONSerialization.jsonObject(with: $0, options: .allowFragments) }
 
 /// Generates a path of the form `<some>/<path>/<to>/.../<somewhere>`.
 let urlPathGen : Gen<String> =
@@ -65,22 +62,19 @@ let parameterGen : Gen<String> = sequence([
     .map { $0.reduce("", combine: +) }
 
 /// Generates a set of parameters.
-let pathParameterGen : Gen<String> = Gen.sized { sz in
-    return parameterGen.proliferateSized(sz + 1)
-    } .map { xs in
-        return xs.reduce("?") { $0 == "?" ? "?" + $1 : $0 + "&" + $1 }
-}
+let pathParameterGen : Gen<String> = Gen.sized({ parameterGen.proliferateSized($0 + 1) })
+    .map({ (["?"] + $0).joined(separator: "&") })
 
-private func curry<A, B, C>(f : (A, B) -> C) -> A -> B -> C {
+private func curry<A, B, C>(_ f : (A, B) -> C) -> (A) -> (B) -> C {
     return { a in { b in f(a, b) } }
 }
 
 extension Dictionary {
-    init<S : SequenceType where S.Generator.Element == Element>(_ pairs : S) {
+    init(keys: [Key], values: [Value]) {
         self.init()
-        var g = pairs.generate()
-        while let (k, v) : (Key, Value) = g.next() {
-            self[k] = v
+
+        for (key, value) in zip(keys, values) {
+            self[key] = value
         }
     }
 }
