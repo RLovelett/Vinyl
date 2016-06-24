@@ -70,10 +70,9 @@ private func curry<A, B, C>(_ f : (A, B) -> C) -> (A) -> (B) -> C {
 }
 
 extension Dictionary {
-    init(keys: [Key], values: [Value]) {
+    init<S: Sequence where S.Iterator.Element == (Key, Value)>(pairs: S) {
         self.init()
-
-        for (key, value) in zip(keys, values) {
+        for (key, value) in pairs {
             self[key] = value
         }
     }

@@ -54,8 +54,8 @@ class RequestMatcherRegistryTests: XCTestCase {
                   lowerStringGen.proliferateSized(size.getPositive)
                 , lowerStringGen.proliferateSized(size.getPositive)
             ) { (keys, vals) in
-                let headers = HTTPHeaders(keys: keys, values: vals.sorted(isOrderedBefore: >))
-                let upperHeaders = HTTPHeaders(keys: keys, values: vals.sorted(isOrderedBefore: <))
+                let headers = HTTPHeaders(pairs: zip(keys, vals.sorted(isOrderedBefore: >)))
+                let upperHeaders = HTTPHeaders(pairs: zip(keys, vals.sorted(isOrderedBefore: <)))
                 let registry = RequestMatcherRegistry(types: [.headers])
 
                 var aRequest = URLRequest(url: URL(string: url)!)
@@ -76,8 +76,8 @@ class RequestMatcherRegistryTests: XCTestCase {
                   lowerStringGen.proliferateSized(size.getPositive)
                 , lowerStringGen.proliferateSized(size.getPositive)
             ) { (keys, vals) in
-                let headers = HTTPHeaders(keys: keys, values: vals)
-                let upperHeaders = HTTPHeaders(headers.map { (l, r) in (l.uppercased(), r.uppercased()) })
+                let headers = HTTPHeaders(pairs: zip(keys, vals))
+                let upperHeaders = HTTPHeaders(pairs: headers.map { (l, r) in (l.uppercased(), r.uppercased()) })
                 let registry = RequestMatcherRegistry(types: [.headers])
                 
                 var aRequest = URLRequest(url: URL(string: url)!)
