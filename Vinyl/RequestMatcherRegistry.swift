@@ -126,8 +126,8 @@ private struct BodyRequestMatcher: RequestMatcher {
         case (.some(let lhsData), .some(let rhsData)):
             guard let lhsHeaders = aRequest.allHTTPHeaderFields,
                 rhsHeaders = anotherRequest.allHTTPHeaderFields,
-            lhsBody = encodeBody(lhsData, headers: lhsHeaders),
-            rhsBody = encodeBody(rhsData, headers: rhsHeaders) else { return lhsData == rhsData }
+                lhsBody = encode(body: lhsData, headers: lhsHeaders),
+                rhsBody = encode(body: rhsData, headers: rhsHeaders) else { return lhsData == rhsData }
             return lhsBody.isEqual(rhsBody)
         default: return false
         }

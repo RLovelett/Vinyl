@@ -48,7 +48,7 @@ extension Track {
         if let encodedRequest = encodedTrack["request"] as? EncodedObject {
             
             // We're using a helper function because we cannot mutate a NSURLRequest directly
-            let request = Request.createWithEncodedRequest(encodedRequest)
+            let request = Request(from: encodedRequest)
             
             self.init(request: request, response: response)
             

@@ -9,31 +9,28 @@
 import Foundation
 
 // Heavily inspired by Venmo's work on DVR (https://github.com/venmo/DVR).
-func encodeBody(_ bodyData: Data?, headers: HTTPHeaders) -> AnyObject? {
+func encode(body: Data?, headers: HTTPHeaders) -> AnyObject? {
     
     guard
-        let body = bodyData,
+        let body = body,
         let contentType = headers["Content-Type"]
         else {
             return nil
     }
     
     switch contentType {
-        
     case _ where contentType.hasPrefix("text/"):
-        return NSString(data: body, encoding: String.Encoding.utf8.rawValue).map (String.init)
-        
+        return String(data: body, encoding: String.Encoding.utf8)
     case _ where contentType.hasPrefix("application/json"):
         return try? JSONSerialization.jsonObject(with: body, options: [])
-        
     default:
         return body.base64EncodedString([])
     }
 }
 
-func decodeBody(_ bodyData: AnyObject?, headers: HTTPHeaders) -> Data? {
+func decode(body: AnyObject?, headers: HTTPHeaders) -> Data? {
     
-    guard let body = bodyData else { return nil }
+    guard let body = body else { return nil }
     
     guard let contentType = headers["Content-Type"]  else {
         

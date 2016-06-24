@@ -32,8 +32,8 @@ extension Response {
         else {
             fatalError("key not found 😞 for Response (check url/statusCode/headers) check \n------\n\(encodedResponse)\n------\n")
         }
-        
-        self.init(urlResponse: urlResponse, body: decodeBody(encodedResponse["body"], headers: headers), error: nil)
+
+        self.init(urlResponse: urlResponse, body: decode(body: encodedResponse["body"], headers: headers), error: nil)
     }
 }
 
