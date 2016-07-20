@@ -9,37 +9,34 @@
 import Foundation
 
 // Heavily inspired by Venmo's work on DVR (https://github.com/venmo/DVR).
-func encodeBody(bodyData: NSData?, headers: HTTPHeaders) -> AnyObject? {
+func encode(body: Data?, headers: HTTPHeaders) -> AnyObject? {
     
     guard
-        let body = bodyData,
+        let body = body,
         let contentType = headers["Content-Type"]
         else {
             return nil
     }
     
     switch contentType {
-        
     case _ where contentType.hasPrefix("text/"):
-        return NSString(data: body, encoding: NSUTF8StringEncoding).map (String.init)
-        
+        return String(data: body, encoding: String.Encoding.utf8)
     case _ where contentType.hasPrefix("application/json"):
-        return try? NSJSONSerialization.JSONObjectWithData(body, options: [])
-        
+        return try? JSONSerialization.jsonObject(with: body, options: [])
     default:
-        return body.base64EncodedStringWithOptions([])
+        return body.base64EncodedString([])
     }
 }
 
-func decodeBody(bodyData: AnyObject?, headers: HTTPHeaders) -> NSData? {
+func decode(body: AnyObject?, headers: HTTPHeaders) -> Data? {
     
-    guard let body = bodyData else { return nil }
+    guard let body = body else { return nil }
     
     guard let contentType = headers["Content-Type"]  else {
         
         // As last resource, we will check if the bodyData is a string and if so convert it
         if let string = body as? String {
-            return string.dataUsingEncoding(NSUTF8StringEncoding)
+            return string.data(using: String.Encoding.utf8)
         }
         else {
             return nil
@@ -47,15 +44,15 @@ func decodeBody(bodyData: AnyObject?, headers: HTTPHeaders) -> NSData? {
     }
     
     if let string = body as? String where contentType.hasPrefix("text/") {
-        return string.dataUsingEncoding(NSUTF8StringEncoding)
+        return string.data(using: String.Encoding.utf8)
     }
     
     if contentType.hasPrefix("application/json") {
-        return try? NSJSONSerialization.dataWithJSONObject(body, options: [])
+        return try? JSONSerialization.data(withJSONObject: body, options: [])
     }
     
     if let string = body as? String {
-        return NSData(base64EncodedString: string, options: [])
+        return Data(base64Encoded: string, options: [])
     }
     
     return nil
